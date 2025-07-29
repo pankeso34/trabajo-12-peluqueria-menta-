@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -9,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/lovelyn" rel="stylesheet">
+
     <style>
         :root {
             --menta: #C1F2B0;
@@ -31,13 +33,28 @@
             font-family: 'Playfair Display', serif;
             font-weight: 500;
         }
-        
-        .logo {
-            transition: transform 0.3s ease;
-        }
-        
-        .logo:hover {
-            transform: scale(1.05);
+
+                
+                .logo {
+                 font-family: 'Poppins';
+                 margin: 0;
+                padding: 0%;
+                display: flex; /* Use flexbox to align items */
+                align-items: center; /* Vertically center items */
+                }
+                
+                .logo img {
+                    max-height: 50px; /* Adjust the max height as needed */
+                    margin-right: 10px; /* Add some spacing between the logo and text */
+                }
+
+                
+                
+                .logo:hover {
+                       font-family: 'Poppins';
+                 margin: 0;
+                padding: 0%;
+
         }
         
         .btn-whatsapp {
@@ -82,65 +99,57 @@
   height: 600px;
   object-fit: cover;          /* Para que la imagen cubra bien */
   border-radius: 50% !important;  /* Asegura forma circular, por si rounded-circle es insuficiente */
-<<<<<<< HEAD
 }
- .tijera-animada {
-            position: absolute;
-            width: 40px;
-            height: 40px;
-            pointer-events: none;
-            animation: tijeraZoom 0.8s forwards;
-            z-index: 9999;
-            user-select: none;
-        }
-
-        .tijera-animada {
-            animation: tijeraZoom 0.8s forwards;
-            z-index: 9999;
-            user-select: none;
-        }
-
-        @keyframes tijeraZoom {
-            0% {
-                opacity: 1;
-                transform: scale(0.5);
-            }
-
-            50% {
-                transform: scale(1.2) rotate(10deg);
-            }
-
-            100% {
-                opacity: 0;
-                transform: scale(0) rotate(-10deg);
-            }
-        }
-
-        #menuNav {
-            padding-right: 40px;
-        }
-        html, body {
-  height: 100%;
-  margin: 0;
-}
-
-.wrapper {
+.radio-inputs {
+  position: relative;
   display: flex;
-  justify-content: center; /* centra horizontalmente */
-  align-items: center;     /* centra verticalmente */
-  height: 100%;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  background-color: #eee;
+  box-sizing: border-box;
+  padding: 0.25rem;
+  font-size: 14px;
 }
 
-=======
+.radio {
+  flex: 1 1 auto;
+  text-align: center;
 }
 
->>>>>>> cc9df9321e1509461f81d75ffd6d4262e937980a
+.radio input {
+  display: none;
+}
+
+.radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #334155;
+  transition: all 0.15s ease-in-out;
+}
+
+.radio input:checked + .name {
+  background-color: #fff;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  animation: select 0.3s ease;
+}
+
+@keyframes select {
+  0% { transform: scale(0.95); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+
 /* Si quieres sombras en hover con Tailwind-like utility */
 .hover\:shadow-2xl:hover {
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
-}       
-<<<<<<< HEAD
-/* From Uiverse.io by marc_remus */ 
+  box-shadow: 0 25px 50px -12px rgba(197, 132, 132, 0.25) !important;
+}   
 .form {
   display: flex;
   flex-direction: column;
@@ -149,9 +158,9 @@
   padding: 20px;
   border-radius: 20px;
   position: relative;
-  background-color: whitesmoke;
-  color: #212121;
-  border: 1px solid #333;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #f0eeee;
 }
 
 .title {
@@ -162,7 +171,7 @@
   display: flex;
   align-items: center;
   padding-left: 30px;
-  color: #d30073;
+  color: #cb7ce4;
 }
 
 .title::before {
@@ -184,13 +193,13 @@
   width: 16px;
   border-radius: 50%;
   left: 0px;
-  background-color: #d30073;
+  background-color: #d714e9e5;
 }
 
-.message,
+.message, 
 .signin {
   font-size: 14.5px;
-  color: #333;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .signin {
@@ -198,11 +207,11 @@
 }
 
 .signin a:hover {
-  text-decoration: underline green;
+  text-decoration: underline rgb(82, 110, 196);
 }
 
 .signin a {
-  color: #d30073;
+  color: #c75bdde3;
 }
 
 .flex {
@@ -242,7 +251,7 @@
 
 .form label .input:focus + span,
 .form label .input:valid + span {
-  color: #d30073;
+  color: #d470d4;
   top: 0px;
   font-size: 0.7em;
   font-weight: 600;
@@ -257,16 +266,14 @@
   outline: none;
   padding: 10px;
   border-radius: 10px;
-  color: #d30073;
+  color: #fff;
   font-size: 16px;
-  transform: 0.3s ease;
-  background-color: whitesmoke;
-  border: 1px solid #d30073;
+  transform: .3s ease;
+  background-color: #faa5fac0;
 }
 
 .submit:hover {
-  background-color: #d30073;
-  color: whitesmoke;
+  background-color: #ec4dc5de;
 }
 
 @keyframes pulse {
@@ -279,80 +286,104 @@
     transform: scale(1.8);
     opacity: 0;
   }
+}  
+
+ 
+
+
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  padding: 80px;
+  box-sizing: border-box;
 }
 
+
+.form {
+  width: 100%;
+  border: 8px solid rgb(39, 102, 81); /* Marco negro de grosor medio */
+}
+.animacion-imagen {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      pointer-events: none;
+      opacity: 0;
+      animation: animacionZoom 0.8s forwards;
+    }
+
+    /* Definición de la animación */
+    @keyframes animacionZoom {
+      0% { opacity: 1; transform: scale(0.5); }
+      50% { transform: scale(1.2) rotate(10deg); }
+      100% { opacity: 0; transform: scale(0) rotate(-10deg); }
+    }
+
     </style>
+
 </head>
 <body class="min-h-screen flex flex-col">
-  
-=======
-    </style>
-</head>
-<body class="min-h-screen flex flex-col">
->>>>>>> cc9df9321e1509461f81d75ffd6d4262e937980a
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="https://i.postimg.cc/nhXq0Rrx/Leonardo-Phoenix-10-Design-a-logo-for-a-hair-salon-named-Menta-3-1-removebg-preview.png" alt="Logo" width="140" height="140" class="d-inline-block align-text-top">
+    
     </a>
-<<<<<<< HEAD
   </div>
 </nav>
     <!-- Header -->
-    <header class="bg-white shadow-sm py-4 sticky top-0 z-50">
+    <header class="bg-white shadow-sm py-2 sticky top-0 z-50"></header>
         <div class="container mx-auto px-4 flex justify-between items-center">
-            <!-- Logo -->
-            <div class="logo flex items-center space-x-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#65B741" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 2v4M7 7l-3 3m13-3l3 3m-8 2v4m-6-2l-3 3m13-3l3 3m-5-13a5 5 0 0 0-6 0M5 20h14a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"/>
-                </svg>
-                <span class="text-2xl font-semibold text-[#65B741]">Menta</span>
-            </div>
             
+        <div class="logo">
+    <img src="https://i.postimg.cc/nhXq0Rrx/Leonardo-Phoenix-10-Design-a-logo-for-a-hair-salon-named-Menta-3-1-removebg-preview.png" alt="Logo" width="300" height="300" style="margin-top: 15px;">
+    </div>
             <!-- Menú de navegación -->
-            <nav class="hidden md:flex space-x-8">
-              
-                <a href="#inicio" class="nav-link text-[#333] hover:text-[#65B741]">Inicio</a>
-                <a href="#ubicacion" class="nav-link text-[#333] hover:text-[#65B741]">Ubicación</a>
-                <a href="#horarios" class="nav-link text-[#333] hover:text-[#65B741]">Horarios</a>
-                <a href="#reservas" class="nav-link text-[#333] hover:text-[#65B741]">Reservas</a>
-                <a href="#testimonios" class="nav-link text-[#333] hover:text-[#65B741]">Testimonios</a>
-                        <div class="relative inline-block">
-    <button id="galeriaToggle" class="nav-link text-[#333] hover:text-[#65B741] dropdown-toggle">
-      Galería
-    </button>
-    <div id="galeriaMenu" class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 w-40 z-10">
-      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Hombre</a>
-      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Mujer</a>
+<!-- Navegación de secciones con menú desplegable en Galería -->
+<div class="radio-inputs flex bg-white/30 backdrop-blur-md p-1 rounded-full shadow-lg space-x-1"></div>
+  <label class="radio">
+    <input type="radio" name="nav" onclick="location.href='#inicio'" checked />
+    <span class="name">Inicio</span>
+  </label>
+
+  <label class="radio">
+    <input type="radio" name="nav" onclick="location.href='#ubicacion'" />
+    <span class="name">Ubicación</span>
+  </label>
+
+  <label class="radio">
+    <input type="radio" name="nav" onclick="location.href='#horarios'" />
+    <span class="name">Horarios</span>
+  </label>
+
+  <label class="radio">
+    <input type="radio" name="nav" onclick="location.href='#reservas'" />
+    <span class="name">Reservas</span>
+  </label>
+
+  <label class="radio">
+    <input type="radio" name="nav" onclick="location.href='#testimonios'" />
+    <span class="name">Testimonios</span>
+  </label>
+
+  <!-- Galería con submenú -->
+  <div class="relative">
+    <label class="radio">
+      <input type="radio" name="nav" id="galeriaToggle" />
+      <span class="name">Galería</span>
+    </label>
+
+    <div id="galeriaMenu" class="absolute hidden bg-white shadow-lg rounded-md mt-2 w-40 z-20">
+      <ul class="py-1">
+        <li>
+          <a class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f0f0f0] hover:text-[#65B741]" href="#galeriaHombre">Hombre</a>
+        </li>
+        <li>
+          <a class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f0f0f0] hover:text-[#65B741]" href="#galeriaMujer">Mujer</a>
+        </li>
+      </ul>
     </div>
   </div>
-</nav>
-=======
-  </div>
-</nav>
-    <!-- Header -->
-    <header class="bg-white shadow-sm py-4 sticky top-0 z-50">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <!-- Logo -->
-            <div class="logo flex items-center space-x-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#65B741" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 2v4M7 7l-3 3m13-3l3 3m-8 2v4m-6-2l-3 3m13-3l3 3m-5-13a5 5 0 0 0-6 0M5 20h14a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"/>
-                </svg>
-                <span class="text-2xl font-semibold text-[#65B741]">Menta</span>
-            </div>
-            
-            <!-- Menú de navegación -->
-            <nav class="hidden md:flex space-x-8">
-                <a href="#inicio" class="nav-link text-[#333] hover:text-[#65B741]">Inicio</a>
-                <a href="#ubicacion" class="nav-link text-[#333] hover:text-[#65B741]">Ubicación</a>
-                <a href="#horarios" class="nav-link text-[#333] hover:text-[#65B741]">Horarios</a>
-                <a href="#reservas" class="nav-link text-[#333] hover:text-[#65B741]">Reservas</a>
-                <a href="#testimonios" class="nav-link text-[#333] hover:text-[#65B741]">Testimonios</a>
-                <a href="#hombres" class="nav-link text-[#333] hover:text-[#65B741]">Galería Hombres</a>
-                <a href="#mujeres" class="nav-link text-[#333] hover:text-[#65B741]">Galería Mujeres</a>
-            </nav>
->>>>>>> cc9df9321e1509461f81d75ffd6d4262e937980a
-            
+</div>
             <!-- Botón móvil -->
             <button class="md:hidden text-[#65B741]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -372,8 +403,9 @@
                     <div class="w-12 h-px bg-[#65B741] mr-4"></div>
                     <span class="text-[#65B741] uppercase tracking-wider">Peluquería</span>
                 </div>
-                <h1 class="text-4xl md:text-5xl font-bold mb-6">Presentación de <br>Peluquería Menta</h1>
-                <p class="text-lg mb-8 max-w-lg">Una experiencia de belleza donde la naturaleza se encuentra con el estilo.</p>
+             <h1 class="text-6xl md:text-7xl font-bold mb-6">Peluquería Menta</h1>
+
+              
                 
                 <div class="flex flex-col space-y-6">
                     <div>
@@ -402,47 +434,66 @@
             
             <div class="md:w-1/2 mt-8 md:mt-0">
                 
-               <img src="https://i.postimg.cc/DZjDkprg/antes-y-despues.png"
-     alt="Elegante salon de peluquería Menta con sillas vintage, espejos grandes y decoración botánica"
+   <!-- Carousel -->
+<div id="demo" class="carousel slide mt-4" data-bs-ride="carousel">
+    <div class="container d-flex justify-content-center mt-4">
+    <div id="demo" class="carousel slide w-100" data-bs-ride="carousel" style="max-width: 500px;">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+     <!-- Imágenes del carrusel -->
+    <div class="carousel-inner rounded" style="height: 420px; overflow: hidden;">
+      <div class="carousel-item active">
+        <img src="https://i.postimg.cc/rsck2f2Q/ANTESYDESPUESMUJERES.png" class="d-block w-100 h-100 object-fit-cover" alt="ANTESYDESPUESMUJERES">
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.postimg.cc/sDfHhkj3/Leonardo-Phoenix-10-A-delicate-handdrawn-silhouette-of-a-face-2.jpg" class="d-block w-100 h-100 object-fit-cover" alt="SILUETADEPELUQUERIA">
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.postimg.cc/cCFmhJx0/ANTESYDESPUESHOMBRES.png" class="d-block w-100 h-100 object-fit-cover" alt="ANTESYDESPUESHOMBRES">
+      </div>
+    </div>
+
+    <!-- Flechas -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</div>
+
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+ <div class  alt="Elegante salon de peluquería Menta con sillas vintage, espejos grandes y decoración botánica"
      class="rounded-circle shadow-lg transition-all hover:shadow-2xl img-circle-md mx-auto d-block">
-
             </div>
-        </div>
+            <!-- Frase debajo del carrusel -->
+<p class="text-center mt-3" style="font-family: 'Lovelyn', serif; color: #000000; font-weight: 600;">
+  Mantén un estilo único, teniendo un cabello hermoso 💋😍🤩
+</p>
+</div>
     </section>
-<<<<<<< HEAD
-
-    <!-- Sección Horarios -->
-    <section id="horarios" class="bg-white py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Horario de Atención</h2>            
-            <div class="max-w-md mx-auto bg-[#f8f8f8] rounded-xl p-8 shadow-sm">
-                <div class="space-y-4">
-                    <div class="flex justify-between items-center border-b border-[#e0e0e0] pb-2">
-                        <span>Martes a Sábado</span>
-                        <span class="font-medium">10:00 - 19:00 hrs</span>
-                    </div>
-                    
-                    <div class="flex justify-between items-center border-b border-[#e0e0e0] pb-2">
-                        <span>Lunes</span>
-                        <span class="font-medium">14:00 - 18:00 hrs</span>
-                    </div>
-                    
-                    <div class="flex justify-between items-center pb-2">
-                        <span>Domingo</span>
-                        <span class="font-medium text-gray-400">Cerrado</span>
-                    </div>
-                </div>
-                <div class="mt-8 text-center text-sm text-gray-500">
-                    * Horario sujeto a disponibilidad en temporada alta
-                </div>
-            </div>
-        </div>
-    </section>
-     <!-- FORMULARIO ESTILO UIVERSE -->
+ <!-- FORMULARIO ESTILO UIVERSE -->
       
-      <div class="wrapper">
+    <div class="min-h-screen flex items-center justify-center">
+  <form id="agendaForm" class="form w-full max-w-md md:max-w-lg lg:max-w-xl p-8">
     <form id="agendaForm" class="form">
-        <form id="agendaForm" class="form">
+        
           <p class="title">Agendar Cita</p>
           <p class="message">Reserva tu hora fácilmente. Máx. 10 por día.</p>
 
@@ -479,14 +530,12 @@
 
           <button type="submit" class="submit">Agendar</button>
           <p class="signin">Recibirás confirmación por correo</p>
-        </form>
+        
       </div>
     </div>
   </div>
-  </form>
+</form>
 </section>
-
-=======
 
     <!-- Sección Horarios -->
     <section id="horarios" class="bg-white py-16">
@@ -516,7 +565,6 @@
         </div>
     </section>
 
->>>>>>> cc9df9321e1509461f81d75ffd6d4262e937980a
     <!-- Sección Ubicación -->
     <section id="ubicacion" class="py-16 bg-[#f8f8f8] text-center">
         <div class="container mx-auto px-4">
@@ -587,98 +635,98 @@
             <a href="#horarios" class="text-white text-2xl">Horarios</a>
             <a href="#reservas" class="text-white text-2xl">Reservas</a>
             <a href="#testimonios" class="text-white text-2xl">Testimonios</a>
-            <a href="#hombres" class="text-white text-2xl">Galería Hombres</a>
-            <a href="#mujeres" class="text-white text-2xl">Galería Mujeres</a>
-        </nav>
-    </div>
-<<<<<<< HEAD
-<script>
-    document.querySelectorAll('.nav-link').forEach(el => {
-                el.addEventListener('click', e => {
-                    e.preventDefault();
+            <a href="#GALERIA" class="text-white text-2xl">Galería </a>
+            <section id="galeriaHombre" class="py-16 bg-white text-center">
+ 
+                <h2 class="text-3xl font-bold mb-8">Galería - Hombre</h2>
+  <!-- Aquí tus imágenes o contenido -->
+</section>
 
-       const tijera = document.createElement("img");
-                    tijera.src = "https://i.postimg.cc/Vk2WNTZs/tijera-removebg-preview.png";
-                    tijera.classList.add("tijera-animada");
-                    tijera.style.position = "absolute";
-                    tijera.style.width = "80px";
-                    tijera.style.height = "80px";
-                    tijera.style.pointerEvents = "none";
+<section id="galeriaMujer" class="py-16 bg-[#f8f8f8] text-center">
+  <h2 class="text-3xl font-bold mb-8">Galería - Mujer</h2>
+  <!-- Aquí tus imágenes o contenido -->
+</section>
 
-                    const rect = el.getBoundingClientRect();
-                    const top = rect.top + window.scrollY + rect.height / 2 - 20;
-                    const left = rect.left + window.scrollX + rect.width + 5;
+          <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const galeriaToggle = document.getElementById('galeriaToggle');
+    const galeriaMenu = document.getElementById('galeriaMenu');
 
-                    tijera.style.top = `${top}px`;
-                    tijera.style.left = `${left}px`;
+    galeriaToggle.addEventListener('click', function(e) {
+      e.stopPropagation();  // evitar que el clic se propague al document
+      galeriaMenu.classList.toggle('hidden');
+    });
 
-                    document.body.appendChild(tijera);
-
-                    tijera.addEventListener('animationend', () => tijera.remove());
-                });
-            });
-            document.getElementById('fecha').addEventListener('change', onFechaChange);
-
-function onFechaChange(){
-  const selectHora = document.getElementById('hora');
-  selectHora.innerHTML = '';
-  const fecha = new Date(this.value);
-  if (isNaN(fecha)) {
-    selectHora.disabled = true;
-    selectHora.innerHTML = '<option value="">Selecciona una fecha válida</option>';
-    return;
-  }
-
-  const diaSemana = fecha.getDay(); // Domingo=0, Lunes=1... Sábado=6
-  let startHour, endHour;
-
-  if (diaSemana === 0) {
-    // Domingo cerrado
-    selectHora.disabled = true;
-    selectHora.innerHTML = '<option value="">Domingo cerrado</option>';
-    return;
-  } else if (diaSemana === 1) {
-    // Lunes
-    startHour = 14; endHour = 18;
-  } else if (diaSemana >= 2 && diaSemana <= 6) {
-    // Mart‑Sáb
-    startHour = 10; endHour = 19;
-  }
-
-  selectHora.disabled = false;
-  selectHora.innerHTML = '<option value="">Selecciona hora</option>';
-
-  for(let h = startHour; h < endHour; h++){
-    const option = document.createElement('option');
-    option.value = `${h.toString().padStart(2,'0')}:00`;
-    option.textContent = `${h.toString().padStart(2,'0')}:00`;
-    selectHora.appendChild(option);
-  }
-}
-document.addEventListener('DOMContentLoaded', () => {
-  const toggle = document.getElementById('galeriaToggle');
-  const menu = document.getElementById('galeriaMenu');
-
-  toggle.addEventListener('click', (e) => {
-    e.stopPropagation();
-    menu.classList.toggle('hidden');
-  });
-
-  // Cerrar cuando se hace clic fuera
-  window.addEventListener('click', (e) => {
-    if (!menu.contains(e.target) && !toggle.contains(e.target)) {
-      if (!menu.classList.contains('hidden')) {
-        menu.classList.add('hidden');
+    document.addEventListener('click', function(event) {
+      if (!galeriaToggle.contains(event.target) &&
+          !galeriaMenu.contains(event.target)) {
+        galeriaMenu.classList.add('hidden');
       }
-    }
+    });
   });
-});
+document.getElementById('mi-enlace').addEventListener('click', function(e) {
+      e.preventDefault();
 
+      // Crear el elemento de la imagen
+      const imagen = document.createElement('img');
+      imagen.src = 'https://i.postimg.cc/VsqBg4xs/tijera-removebg-preview.png'; // URL de la imagen
+      imagen.classList.add('animacion-imagen');
 
-    </script>
-=======
+      // Posicionar la imagen donde se hizo clic
+      const rect = e.target.getBoundingClientRect();
+      imagen.style.top = `${rect.top + window.scrollY + rect.height / 2 - 50}px`;
+      imagen.style.left = `${rect.left + window.scrollX + rect.width / 2 - 50}px`;
 
-    
->>>>>>> cc9df9321e1509461f81d75ffd6d4262e937980a
+      // Añadir la imagen al cuerpo del documento
+      document.body.appendChild(imagen);
+
+      // Eliminar la imagen después de la animación
+      imagen.addEventListener('animationend', () => {
+        imagen.remove();
+      });
+    });
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
+
 </html>
