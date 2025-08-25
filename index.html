@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="trabajo(1).css">
  
+<<<<<<< HEAD
 
     <style>
         :root {
@@ -607,6 +608,10 @@
     </style>
 
 </head>
+=======
+
+   
+>>>>>>> c84c4bb (Subo carpetas separadas de código, ATT: la Jipeta, me borró mi carrusel)
 <body>
     <!-- Header -->
 <header>
@@ -614,14 +619,17 @@
     <nav>
       <!-- Logo a la izquierda -->
       <a href="#" class="logo" style="display:inline-block; max-height:70px; margin-right:20px;">
-<<<<<<< HEAD
+
         <img src="https://i.postimg.cc/nhXq0Rrx/Leonardo-Phoenix-10-Design-a-logo-for-a-hair-salon-named-Menta-3-1-removebg-preview.png" alt="Logo Peluquería Menta" style="max-height: 70px;">
 
       <img src="https://i.postimg.cc/nhXq0Rrx/Leonardo-Phoenix-10-Design-a-logo-for-a-hair-salon-named-Menta-3-1-removebg-preview.png" 
      alt="Logo Peluquería Menta" 
      style="max-height:70px; width:40px; height:40px;">
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c84c4bb (Subo carpetas separadas de código, ATT: la Jipeta, me borró mi carrusel)
       </a>
 
       <!-- Menú principal -->
@@ -645,10 +653,15 @@
     <!-- Hero Section -->
     <section class="hero" id="inicio">
         <div class="hero-content">
-<<<<<<< HEAD
+
             <h1>Peluquería Menta</h1>
             <p>En Estilo & Elegancia, creemos que cada corte de pelo cuenta una historia. Deja que nuestra experta estilista Marina te ayude a escribir la tuya.</p>
+<<<<<<< HEAD
            <h1>✂️PELUQUERIA MENTA✂️</h1>
+=======
+
+            <h1>✂️PELUQUERIA MENTA✂️</h1>
+>>>>>>> c84c4bb (Subo carpetas separadas de código, ATT: la Jipeta, me borró mi carrusel)
             <p>En Estilo & Elegancia, creemos  que somos Artistas: Tu cabello es mi lienzo y tu energía mi inspiración.</p>
 
       <!-- Botón personalizado con enlace a #servicios -->
@@ -673,7 +686,7 @@
                 <!-- Biography Section -->
                 <div class="biography-section">
                     <div class="about-image">
-<<<<<<< HEAD
+
                         <img src="https://i.postimg.cc/xCJ23nFg/Whats-App-Image-2025-08-21-at-1-12-21-PM.jpg" alt="Mayonesa, estilista profesional con más de 18 años de experiencia">
                     </div>
                     <div class="about-text">
@@ -898,115 +911,13 @@
 
      <script src="trabajo(1).js"></script>
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> c84c4bb (Subo carpetas separadas de código, ATT: la Jipeta, me borró mi carrusel)
 
 
-    <script>
-        // Mobile menu toggle
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('active');
-            this.querySelector('i').classList.toggle('fa-times');
-            this.querySelector('i').classList.toggle('fa-bars');
-        });
+    
 
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                if(this.classList.contains('filter-btn')) return;
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                window.scrollTo({
-                    top: targetElement.offsetTop - 70,
-                    behavior: 'smooth'
-                });
-                
-                // Close mobile menu if open
-                const navLinks = document.querySelector('.nav-links');
-                if(navLinks.classList.contains('active')) {
-                    navLinks.classList.remove('active');
-                    document.querySelector('.menu-toggle i').classList.remove('fa-times');
-                    document.querySelector('.menu-toggle i').classList.add('fa-bars');
-                }
-            });
-        });
-
-        // Gallery filter
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                // Update active button
-                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                this.classList.add('active');
-                
-                const filter = this.getAttribute('data-filter');
-                const galleryItems = document.querySelectorAll('.gallery-item');
-                
-                if(filter === 'all') {
-                    galleryItems.forEach(item => item.style.display = 'block');
-                } else {
-                    galleryItems.forEach(item => {
-                        if(item.getAttribute('data-category') === filter) {
-                            item.style.display = 'block';
-                        } else {
-                            item.style.display = 'none';
-                        }
-                    });
-                }
-            });
-        });
-
-        // Scroll animation
-        window.addEventListener('scroll', function() {
-            const scrollPosition = window.scrollY;
-            
-            // Add shadow to header when scrolling
-            if(scrollPosition > 20) {
-                document.querySelector('header').style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
-            } else {
-                document.querySelector('header').style.boxShadow = 'none';
-            }
-        });
-    </script>
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
->>>>>>> 3f2bdbce3360f0f34801dda7e142bece0a4cbb29
 </body>
 </html>
