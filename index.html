@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo & Elegancia - Peluquería</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="trabajo(1).css">
+ 
+</head>
+<body>
+    <!-- Header -->
+<header>
+  <div class="container">
+    <nav>
+      <!-- Logo a la izquierda -->
+      <a href="#" class="logo" style="display:inline-block; max-height:70px; margin-right:20px;">
+        <img src="https://i.postimg.cc/nhXq0Rrx/Leonardo-Phoenix-10-Design-a-logo-for-a-hair-salon-named-Menta-3-1-removebg-preview.png" alt="Logo Peluquería Menta" style="max-height: 70px;">
+      </a>
+
+      <!-- Menú principal -->
+      <ul class="nav-links" style="display:inline-flex; gap: 1.5rem; list-style:none; padding:0; margin:0; align-items:center;">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+      <!-- Icono menú hamburguesa para móvil -->
+      <div class="menu-toggle" style="display:none; cursor:pointer;">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Peluquería Menta</h1>
+            <p>En Estilo & Elegancia, creemos que cada corte de pelo cuenta una historia. Deja que nuestra experta estilista Marina te ayude a escribir la tuya.</p>
+      <!-- Botón personalizado con enlace a #servicios -->
+<div style="text-align: center;">
+  <a class="fancy" href="#servicios">
+    <span class="top-key"></span>
+    <span class="text">Explora nuestros servicios</span>
+    <span class="bottom-key-1"></span>
+    <span class="bottom-key-2"></span>
+  </a>
+</div>
+
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="nosotros">
+        <div class="container">
+            <div class="about-content">
+
+                <!-- Biography Section -->
+                <div class="biography-section">
+                    <div class="about-image">
+                        <img src="https://i.postimg.cc/xCJ23nFg/Whats-App-Image-2025-08-21-at-1-12-21-PM.jpg" alt="Mayonesa, estilista profesional con más de 18 años de experiencia">
+                    </div>
+                    <div class="about-text">
+                        <h2>Biografía de Mayonesa</h2>
+                       <p>Mayonesa inició su camino como estilista a los 18 años, formándose en academias reconocidas como Liceo Bicentenariop Kronos y colaborando con salones emergentes en Alto Hospicio.</p>
+<p>Con una visión moderna y creativa, fue desarrollando un estilo propio que mezcla las últimas tendencias con un toque personal, destacándose por su cercanía y dedicación.</p>
+<p>"El cabello habla de quiénes somos. Me inspira ayudar a cada persona a expresarlo con confianza" - Mayonesa</p>
+
+                    </div>
+                </div>
+
+                <!-- Salon Photo Section --> 
+                <div class="salon-photo-section">
+                    <div class="about-text">
+                        <h2>Nuestro Salón</h2>
+                        <p>En 2005, decidió abrir Estilo & Elegancia donde pudiera ofrecer un servicio exclusivo y cuidadosamente personalizado.</p>
+                        <p>Reconocido por cortes precisos, coloración innovadora y atención excepcional. Cada cliente recibe tratamiento adaptado a sus necesidades.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://sinperderelhilo.com/wp-content/uploads/2021/11/Menta-Beauty-Place-Alfredo-Marquerie-23--1024x683.jpg" alt="Interior elegante del salón Estilo & Elegancia mostrado sofás modernos y espacios de trabajo">
+                    </div>
+                </div>
+
+            </div>
+        </div>      
+    </section>
+
+  
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="galeria">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestra Galería</h2>
+            </div>
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="mujeres">Mujeres</button>
+                <button class="filter-btn" data-filter="hombres">Hombres</button>
+                <button class="filter-btn" data-filter="color">Coloración</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="mujeres">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c865c1c0-0cae-45e1-8ba0-2cd863f0aeb6.png" alt="Corte bob asimétrico con mechas claras en mujer de cabello castaño">
+                    <div class="gallery-overlay">
+                        <h3>Corte Bob Asimétrico</h3>
+                        <p>Técnica combinada con mechas balayage</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="hombres">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/338460a1-48a4-4692-865b-69b43597a03e.png" alt="Corte fade moderno con degradado preciso en cabello negro">
+                    <div class="gallery-overlay">
+                        <h3>Corte Fade Moderno</h3>
+                        <p>Técnica de degradado con navaja</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="color">
+                    <img src="https://i.postimg.cc/sXN23TbH/colordepelorosa.jpg" alt="Coloración fantasía en tonos pastel rosado y malva">
+                    <div class="gallery-overlay">
+                        <h3>Color Fantasía</h3>
+                        <p>Tono rosado con base morado claro</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="mujeres">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6b160e8e-f21d-4cc2-83b1-1cc2d0ff20be.png" alt="Peinado de novia con ondas naturales y flor seca incorporada">
+                    <div class="gallery-overlay">
+                        <h3>Peinado de Novia</h3>
+                        <p>Ondas naturales con accesorios</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="hombres">
+                    <img src="https://i.postimg.cc/2S0yHj2f/peloh.jpg" alt="Afeitado tradicional con navaje y tratamiento posterior con aceites esenciales">
+                    <div class="gallery-overlay">
+                        <h3>Afeitado Tradicional</h3>
+                        <p>Con tratamiento post-afeitado</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="color">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/da24eea6-db3f-4cf0-bf4e-1e6a1c94bac6.png" alt="Coloración balayage natural en tonos miel sobre base castaña">
+                    <div class="gallery-overlay">
+                        <h3>Balayage Natural</h3>
+                        <p>Tono miel sobre base castaña</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="mujeres">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/106ed9e8-e1c3-4664-9946-eb2679d80712.png" alt="Corte pixie moderno con terminaciones texturizadas">
+                    <div class="gallery-overlay">
+                        <h3>Corte Pixie</h3>
+                        <p>Con terminaciones texturizadas</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="color">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/462b13ff-5017-43d0-861a-2670fff1ee43.png" alt="Coloración ombre en tonos rubios que degradan a castaño">
+                    <div class="gallery-overlay">
+                        <h3>Ombre Rubio</h3>
+                        <p>Degradado a castaño</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- Services Section -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Servicios</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0abb57e5-d062-4de9-9eca-17a5cf463efa.png" alt="Mujer recibiendo un corte de pelo moderno con capas por niveles en el salón de Marina">
+                    </div>
+                    <div class="service-content">
+                        <h3>Corte Femenino</h3>
+                        <p>Desde cortes clásicos hasta los estilos más vanguardistas, nuestros cortes femeninos resaltan tu belleza natural.</p>
+                        <div class="price">$1200</div>
+                        <a href="#" class="btn">Reservar</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2ff11901-a906-4862-8f4f-211653bc5ff8.png" alt="Hombre recibiendo un afeitado tradicional con navaja en Estilo & Elegancia">
+                    </div>
+                    <div class="service-content">
+                        <h3>Corte Masculino</h3>
+                        <p>Servicios de barbería clásica combinados con las últimas tendencias para un look impecable.</p>
+                        <div class="price">$900</div>
+                        <a href="#" class="btn">Reservar</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/688c8dcb-22f4-4bca-a755-9e1aaab8fef7.png" alt="Técnica de coloración profesional con balayage en cabello largo">
+                    </div>
+                    <div class="service-content">
+                        <h3>Coloración Profesional</h3>
+                        <p>Técnicas de coloración avanzadas como balayage, mechas y color fantasía para un look único.</p>
+                        <div class="price">Desde $2500</div>
+                        <a href="#" class="btn">Reservar</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c95a16d3-0445-47bf-a96e-c0c6c2043fa3.png" alt="Mascarilla capilar nutritiva siendo aplicada en el salón de belleza">
+                    </div>
+                    <div class="service-content">
+                        <h3>Tratamientos Capilares</h3>
+                        <p>Terapias reconstructivas, hidratación intensiva y tratamientos para cabello dañado.</p>
+                        <div class="price">Desde $1500</div>
+                        <a href="#" class="btn">Reservar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Estilo & Elegancia</h3>
+                    <p>Transformando tu estilo desde 1995 con pasión y profesionalismo.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Horarios</h3>
+                    <p>Lunes a Viernes: 9AM - 7PM</p>
+                    <p>Sábados: 9AM - 2PM</p>
+                    <p>Domingos: Cerrado</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Siempreviva 742, Buenos Aires</p>
+                    <p><i class="fas fa-phone"></i> +54 11 5555-5555</p>
+                    <p><i class="fas fa-envelope"></i> info@estiloelegancia.com</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Suscríbete para recibir promociones especiales y consejos de estilo.</p>
+                    <form>
+                        <input type="email" placeholder="Tu correo" style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: none;">
+                        <button class="btn" style="width: 100%;">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Estilo & Elegancia. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+     <script src="trabajo(1).js"></script>
+
+</body>
+</html>
